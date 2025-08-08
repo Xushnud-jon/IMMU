@@ -9,13 +9,14 @@ import { ThreeDot } from 'react-loading-indicators';
 // Barcha sahifalarni lazy loading bilan yuklash
 
 const AboutPage = React.lazy(() => import('./pages/About/index.jsx'));
+const ArticlePage = React.lazy(() => import('./pages/Articles/index.jsx'));
 
 
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col max-w-[1700px] m-auto">
+      <div className="min-h-screen flex flex-col max-w-[1700px] m-auto ">
      
           <Header />
        
@@ -33,7 +34,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Homepage />} />
               <Route path="/about" element={<AboutPage />} />
-    
+              <Route path="/articles" element={<ArticlePage />} />
             </Routes>
           </Suspense>
         </main>

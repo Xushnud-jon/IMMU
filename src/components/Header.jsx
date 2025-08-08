@@ -34,12 +34,7 @@ const Header = () => {
     { kod: "RUS", nomi: "Русский", bayroq: RuFlag }
   ];
 
-  const dasturlar = [
-    { nomi: "International educational programs", path: "/international-programs" },
-    { nomi: "Specialized courses", path: "/specialized-courses" },
-    { nomi: "Islamic Finance Literacy Course", path: "/profile" },
-    { nomi: "Certification program", path: "/certification" }
-  ];
+ 
 
   const tanlanganTil = tillar.find(t => t.kod === til) || tillar[1];
 
@@ -63,8 +58,8 @@ const Header = () => {
         <nav className="hidden lg:flex items-center space-x-4 lg:space-x-6 xl:space-x-8">
       
              <Link to="/" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" onClick={() => setMenuOchiq(false)}>Home</Link>
-            <Link to="/" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" onClick={() => setMenuOchiq(false)}>ABOUT IMMU</Link>
-          <Link to="/profile" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1">ARTICLES</Link>
+            <Link to="/about" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" onClick={() => setMenuOchiq(false)}>ABOUT IMMU</Link>
+          <Link to="/articles" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1">ARTICLES</Link>
           <Link to="/contact" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" onClick={() => setMenuOchiq(false)}>NEWS</Link>
            <Link to="/contact" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" onClick={() => setMenuOchiq(false)}>CONTACT</Link>
         </nav>
