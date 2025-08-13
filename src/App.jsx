@@ -10,6 +10,8 @@ import { ThreeDot } from 'react-loading-indicators';
 
 const AboutPage = React.lazy(() => import('./pages/About/index.jsx'));
 const ArticlePage = React.lazy(() => import('./pages/Articles/index.jsx'));
+const ContackPage = React.lazy(() => import('./pages/Contact/index.jsx'));
+const NewsPage = React.lazy(() => import('./pages/News/index.jsx'));
 
 
 
@@ -35,6 +37,8 @@ function App() {
               <Route path="/" element={<Homepage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/articles" element={<ArticlePage />} />
+              <Route path="/contact" element={<ContackPage />} />
+              <Route path="/news" element={<NewsPage />} />
             </Routes>
           </Suspense>
         </main>

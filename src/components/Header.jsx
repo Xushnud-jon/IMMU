@@ -60,7 +60,7 @@ const Header = () => {
              <Link to="/" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" onClick={() => setMenuOchiq(false)}>Home</Link>
             <Link to="/about" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" onClick={() => setMenuOchiq(false)}>ABOUT IMMU</Link>
           <Link to="/articles" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1">ARTICLES</Link>
-          <Link to="/contact" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" onClick={() => setMenuOchiq(false)}>NEWS</Link>
+          <Link to="/news" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" onClick={() => setMenuOchiq(false)}>NEWS</Link>
            <Link to="/contact" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" onClick={() => setMenuOchiq(false)}>CONTACT</Link>
         </nav>
 
